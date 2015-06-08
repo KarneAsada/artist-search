@@ -223,6 +223,8 @@
     self.hashChange();
   }
 
+  // When the location hash is changed, check each stored route
+  // for a match and fire the appropriate callback.
   Router.prototype.hashChange = function() {
     var hash = (window.location.hash || "#").slice(1);
     for (var route in this.routes) {
@@ -242,6 +244,7 @@
     }
   }
 
+  // Convenience method to set the hash value
   Router.prototype.go = function( newLocation ) {
     window.location.hash = newLocation;
   }
