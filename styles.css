@@ -7,7 +7,29 @@ body {
   color: #84BD00;
 }
 
-#artistList div {
+.btn:hover {
+  color: #84BD00;
+}
+
+.list div {
   cursor: pointer;
-  margin-top: .5ex
+  padding-top: .5ex;
+  padding-bottom: .5ex;
+}
+
+.list div:hover {
+  background-color: rgb(122, 130, 136) !important;
+}
+
+.list div:nth-child(even) {
+  background-color: rgb(58, 63, 68);
+}
+
+.list p {
+  font-size: 1.25em;
+  margin-top: 1ex;
+}
+
+.list p i {
+  color: rgb(240, 240, 240);;
 }

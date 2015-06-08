@@ -22,14 +22,18 @@
   <!-- Add your site or application content here -->
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-8 col-md-offset-2 col-xs-12">
+        <div class="row">
+          <h2 class="col-xs-12">Spotify Artist Tracks</h2>
+          <h4 class="col-xs-12">Search for an artist and preview their top ten most popular tracks</h4>
+        </div>
         <div class="row">
           <div class="form-inline">
-            <div class="form-group col-xs-10">
-              <input type="text" class="input-lg col-lg-12" placeholder="Artist's Name">
+            <div class="form-group col-xs-9 col-sm-10">
+              <input type="text" id="query" class="input-lg col-lg-12 col-xs-12" placeholder="Artist's Name">
             </div>
             <div class="form-group col-xs-2">
-              <button type="button" class="btn btn-primary input-lg col-lg-12">
+              <button type="button" id="search" class="btn btn-primary input-lg col-lg-12">
                 <i class="fa fa-spotify"></i>
                 Search
               </button>
@@ -37,19 +41,16 @@
           </div>
         </div>
         <div class="row">
-          <div id="artistList" class="col-xs-12">
+          <div id="resultList" class="list col-xs-12">
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- templates -->
-  <div style="display:none">
-    <div id="artistTpl" style="display:none">
-
-    </div>
-  </div>
+  <audio id="audioPlayer">
+  <p>Your browser does not support the <code>audio</code> element.</p>
+  </audio>
 
   <script src="as.js"></script>
 </body>
