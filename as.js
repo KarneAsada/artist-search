@@ -212,12 +212,12 @@
     // Initialize
     if (window.addEventListener) {
       window.addEventListener("hashchange", function(){
-        self.hashChange()
+        self.hashChange();
       }, false);
     }
     else if (window.attachEvent) {
       window.attachEvent("onhashchange", function(){
-        self.hashChange()
+        self.hashChange();
       });
     }
     self.hashChange();
@@ -242,12 +242,12 @@
     if (this.routes.default) {
       this.routes.default.call(this);
     }
-  }
+  };
 
   // Convenience method to set the hash value
   Router.prototype.go = function( newLocation ) {
     window.location.hash = newLocation;
-  }
+  };
 
   /**
    * Utility functions
