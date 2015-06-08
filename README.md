@@ -3,7 +3,7 @@ demo: http://karneasada.github.io/artist-search/
 
 A very simple app that allows the user to search for an artist, via Spotify's Web API. Each search returns a list of potential matches. Clicking on an artist's name returns a list of that artist's top ten most popular tracks. A preview of each track is also playable by clicking on the track's name.
 
-# Plain JavaScript
+# Just Plain JavaScript
 This entire app is built without the use of plugins or libraries - only plain ES5. I built some helper objects to stand in for the type of tools I would have if I had used a framework like Angular.
 
 ## Promises
