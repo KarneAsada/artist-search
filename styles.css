@@ -1,0 +1,13 @@
+body {
+  margin-top: 5ex;
+}
+
+.btn {
+  font-size: 1.3em;
+  color: #84BD00;
+}
+
+#artistList div {
+  cursor: pointer;
+  margin-top: .5ex
+}

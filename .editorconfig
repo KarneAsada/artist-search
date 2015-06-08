@@ -1,0 +1,19 @@
+# http://editorconfig.org
+# from https://raw.githubusercontent.com/angular/angular.js/master/.editorconfig
+#
+# Sublime plugin https://github.com/sindresorhus/editorconfig-sublime#readme
+# Atom plugin https://github.com/sindresorhus/atom-editorconfig#readme
+
+
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
